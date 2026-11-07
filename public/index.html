@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Job board</title>
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0 auto; max-width: 640px; padding: 16px; }
+      li { border: 1px solid #ddd; border-radius: 8px; display: flex; gap: 12px; align-items: center; justify-content: space-between; list-style: none; margin: 8px 0; padding: 12px; }
+      ul { padding: 0; }
+      input { font-size: 16px; padding: 8px; width: 100%; box-sizing: border-box; }
+      button { flex-shrink: 0; font-size: 14px; padding: 6px 12px; cursor: pointer; }
+      #message { color: #b00020; min-height: 1.2em; }
+    </style>
+  </head>
+  <body>
+    <h1>Jobs</h1>
+    <input id="search" placeholder="Search by title, company or place" />
+    <p id="message" role="alert"></p>
+    <ul id="jobs"></ul>
+    <h2>Saved jobs</h2>
+    <p id="saved-empty">No saved jobs yet. Press Save on a job to keep it here.</p>
+    <ul id="saved"></ul>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
